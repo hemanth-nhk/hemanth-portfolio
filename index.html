@@ -208,6 +208,21 @@ nav.scrolled { padding: 0.75rem 6vw; }
 .about-fact-label { font-family: var(--mono); font-size: 0.66rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 0.25rem; }
 .about-fact-value { font-size: 0.88rem; font-weight: 600; color: var(--white); }
 
+.cert-list { display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.5rem; }
+.cert-item {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+  padding: 0.85rem 1.1rem; transition: border-color 0.2s;
+}
+.cert-item:hover { border-color: var(--border-hover); }
+.cert-name { font-size: 0.88rem; font-weight: 600; color: var(--white); }
+.cert-issuer { font-size: 0.76rem; color: var(--muted); margin-top: 0.15rem; }
+.cert-badge {
+  font-family: var(--mono); font-size: 0.66rem; font-weight: 500; color: var(--blue);
+  background: var(--blue-glow); border: 1px solid var(--border-hover);
+  padding: 0.2rem 0.6rem; border-radius: 3px; white-space: nowrap;
+}
+
 .contact-box {
   background: var(--bg2); border: 1px solid var(--border);
   border-radius: 12px; padding: 3rem; text-align: center; max-width: 640px; margin: 2.5rem auto 0;
@@ -280,7 +295,7 @@ footer a { color: var(--blue); text-decoration: none; }
       <p class="hero-proof">
         Built a <strong>real-time voice AI assistant</strong> that automates desktop tasks via speech,
         and a <strong>face recognition attendance system</strong> with live detection pipelines.
-        Final-year B.Tech (AI &amp; ML) — shipping real systems, not just notebooks.
+        B.Tech (AI &amp; ML) graduate — shipping real systems, not just notebooks.
       </p>
       <div class="hero-btns">
         <a href="#projects" class="btn-primary">View Projects →</a>
@@ -325,7 +340,7 @@ footer a { color: var(--blue); text-decoration: none; }
     <div class="proof-item reveal d1"><div class="proof-number"><span>#</span>1</div><div class="proof-label">Voice AI Assistant</div></div>
     <div class="proof-item reveal d2"><div class="proof-number">5<span>+</span></div><div class="proof-label">ML Libraries Used</div></div>
     <div class="proof-item reveal d3"><div class="proof-number">7.29</div><div class="proof-label">GPA / 10 — JNTUH</div></div>
-    <div class="proof-item reveal d4"><div class="proof-number">May<span>'26</span></div><div class="proof-label">Graduating</div></div>
+    <div class="proof-item reveal d4"><div class="proof-number">May<span>'26</span></div><div class="proof-label">Graduated</div></div>
   </div>
 </div>
 
@@ -341,7 +356,7 @@ footer a { color: var(--blue); text-decoration: none; }
       <div class="project-card reveal d1">
         <div class="project-top">
           <span class="project-badge">Capstone</span>
-          <span class="project-date">Jan 2026 – Present</span>
+          <span class="project-date">Jan 2026 – May 2026</span>
         </div>
         <div class="project-name">VAIDA — Voice-Activated Intelligent Desktop App</div>
         <div class="project-problem">Problem: Control a desktop hands-free using natural speech, while ensuring only verified users can trigger sensitive operations.</div>
@@ -405,17 +420,31 @@ footer a { color: var(--blue); text-decoration: none; }
     </div>
     <div class="about-grid">
       <div class="about-body reveal d1">
-        <p>Final-year <strong>B.Tech student in AI &amp; ML</strong> at Mahaveer Institute of Science and Technology (JNTUH), Hyderabad. Focused on building practical AI-powered systems — the kind that solve real problems, not just score well in notebooks.</p>
+        <p><strong>B.Tech graduate in AI &amp; ML</strong> from Mahaveer Institute of Science and Technology (JNTUH), Hyderabad — Class of 2026. Focused on building practical AI-powered systems — the kind that solve real problems, not just score well in notebooks.</p>
         <p>My work spans <strong>speech processing, computer vision, and system design</strong>. I think end-to-end: from architecture decisions to actual implementation. Comfortable breaking down complex problems and working toward clear, working outcomes.</p>
         <p>I'm a <strong>quick learner</strong> with strong communication skills — I can explain what I build, not just build it. Looking for an internship or entry-level role where I can contribute fast and work on problems that matter.</p>
       </div>
       <div class="about-sidebar reveal d2">
-        <div class="about-fact"><div class="about-fact-label">Currently</div><div class="about-fact-value">Final Year B.Tech (AI &amp; ML)</div></div>
+        <div class="about-fact"><div class="about-fact-label">Currently</div><div class="about-fact-value">B.Tech Graduate (AI &amp; ML)</div></div>
         <div class="about-fact"><div class="about-fact-label">Institution</div><div class="about-fact-value">MIST — JNTUH, Hyderabad</div></div>
-        <div class="about-fact"><div class="about-fact-label">Graduation</div><div class="about-fact-value">May 2026</div></div>
+        <div class="about-fact"><div class="about-fact-label">Graduated</div><div class="about-fact-value">May 2026</div></div>
         <div class="about-fact"><div class="about-fact-label">GPA</div><div class="about-fact-value">7.29 / 10 (up to 3rd year)</div></div>
         <div class="about-fact"><div class="about-fact-label">Primary Language</div><div class="about-fact-value">Python</div></div>
         <div class="about-fact"><div class="about-fact-label">Status</div><div class="about-fact-value" style="color:#4ade80">Open to Opportunities ✓</div></div>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top:3rem;">
+      <div class="sec-eyebrow">// Certifications</div>
+      <h2 class="sec-title" style="font-size:1.4rem;">Certifications</h2>
+      <div class="cert-list">
+        <div class="cert-item">
+          <div>
+            <div class="cert-name">Microsoft Certified: Azure Fundamentals</div>
+            <div class="cert-issuer">Microsoft</div>
+          </div>
+          <span class="cert-badge">AZ-900</span>
+        </div>
       </div>
     </div>
   </div>
